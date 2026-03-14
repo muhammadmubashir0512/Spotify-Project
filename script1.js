@@ -13,7 +13,7 @@ async function getsongs(folder) {
     let songUl = document.querySelector(".songsList").getElementsByTagName("ul")[0];
     songUl.innerHTML = "";
     for (const song of songs) {
-        let displayName = decodeURIComponent(song).replace(".mp3", "").slice(0, 20);
+        let displayName = decodeURIComponent(song).replace(".mp3", "").slice(0, 10);
         songUl.innerHTML = songUl.innerHTML + `<li data-song="${song}">
                             <img class="invert" src="music.svg" alt="">
                             <div class="info">
@@ -42,7 +42,7 @@ function playMusic(track) {
     currentSong.play();
     play.src = "pause.svg";
 
-    document.querySelector(".songinfo").innerHTML = decodeURIComponent(track).replace(".mp3", "").slice(0, 30);
+    document.querySelector(".songinfo").innerHTML = decodeURIComponent(track).replace(".mp3", "").slice(0, 20);
     document.querySelector(".songtime").innerHTML = "00:00/00:00";
 }
 
