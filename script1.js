@@ -67,7 +67,7 @@ async function main() {
 
     // Display all albums
     async function displayAlbum() {
-        const folders = ["Afusic", "AP-Dhillon", "Gill-brothers", "Hassan-Raheem", "Talha-Anjum", "Talwinder"];
+        const folders = ["library", "Afusic", "AP-Dhillon", "Gill-brothers", "Hassan-Raheem", "Talha-Anjum", "Talwinder"];
         let cardContainer = document.querySelector(".cardContainer");
 
         for (const folder of folders) {
