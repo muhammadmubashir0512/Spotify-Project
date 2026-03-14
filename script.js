@@ -77,10 +77,10 @@
 // async function main(){
 
 //     // get the list of all songs
-    // await getsongs("library");
-    // playMusic(songs[0]);
-    // currentSong.pause();
-    // play.src = "play.svg";
+//     await getsongs("library");
+//     playMusic(songs[0]);
+//     currentSong.pause();
+//     play.src = "play.svg";
 
 
 //     // display all the album on the page

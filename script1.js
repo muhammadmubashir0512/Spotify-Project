@@ -13,7 +13,7 @@ async function getsongs(folder) {
     let songUl = document.querySelector(".songsList").getElementsByTagName("ul")[0];
     songUl.innerHTML = "";
     for (const song of songs) {
-        let displayName = decodeURIComponent(song).replace(".mp3", "").slice(0, 10);
+        let displayName = decodeURIComponent(song).replace(".mp3", "").slice(0, 8);
         songUl.innerHTML = songUl.innerHTML + `<li data-song="${song}">
                             <img class="invert" src="music.svg" alt="">
                             <div class="info">
